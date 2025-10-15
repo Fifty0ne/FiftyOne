@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="journey.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>51 | The Journey</title>
+</head>
+<body>
+    <svg width="0" height="0"></svg>
+    <!-- Smooth wave filter -->
+    <filter id="wavy">
+        <feTurbulence id="turbulence" baseFrequency="0.0001" numOctaves="3" seed="50">
+        <animate attributeName="baseFrequency"
+                dur="6s"
+                values="0.01;0.015;0.01"
+                repeatCount="indefinite"/>
+        </feTurbulence>
+        <feDisplacementMap in="SourceGraphic" scale="3" />
+    </filter>
+    </svg>
+    
+    <div class="triangle-container">
+    <svg class="triangle triangle1" viewBox="0 0 200 200">
+        <polygon points="100,10 190,190 10,190" filter="url(#wavy)" />
+    </svg>
+    <svg class="triangle triangle2" viewBox="0 0 200 200">
+        <polygon points="100,10 190,190 10,190" filter="url(#wavy)" />
+    </svg>
+    <svg class="triangle triangle3" viewBox="0 0 200 200">
+        <polygon points="100,10 190,190 10,190" filter="url(#wavy)" />
+    </svg>
+    </div>
+    <header>
+        <div id="main-nav">
+            <div class="container">
+            <!-- HAMBURGER ICON -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- LOGO -->
+            <a href="https://MEETRATHOD006.github.io/Fifty-One/index.html" class="logo flex items-center gap-2" title="Home" aria-label="Home">
+                <div class="desktop-logo hidden">
+                <img src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/logos/1.png" alt="Logo" width="120px" height="120px">
+                <p>FIFTY ONE</p>
+                </div>
+                <div class="mobile-logo"></div>
+            </a>
+
+            <div class="wrapper">
+                <!-- Desktop Nav -->
+                <nav class="desktop-menu lg:static" aria-label="Main navigation desktop">
+                <!-- Keep this empty or keep desktop-only nav here -->
+                </nav>
+
+                <!-- Fullscreen Menu (moved OUTSIDE .desktop-menu) -->
+                <div class="listcontainer">
+                <li><a href="https://MEETRATHOD006.github.io/Fifty-One/index.html" class="menu-item">Home</a></li>
+                <li><a href="https://MEETRATHOD006.github.io/Fifty-One/OtherPages/Services_page/services.html" class="menu-item">Services</a></li>
+                <li><a href="https://MEETRATHOD006.github.io/Fifty-One/OtherPages/About_page/about.html" class="menu-item">About</a></li>
+                <li><a href="https://MEETRATHOD006.github.io/Fifty-One/OtherPages/journey/journey.html" class="menu-item">Journey</a></li>
+                <li class="last"><a href="#contact-us" class="menu-item">Contact Us</a></li>
+                <span class="nav-overlay"></span>
+                </div>
+            </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="full-service">
+        <div class="full-service-container">
+                <div class="full-service-main">
+                    <em>Our Process</em>
+                    <h2>So good we</h2>
+                    <h2>named it...</h2>
+                    <div>
+                        <span class="mark text-nowrap" index="0" isinline="true">
+                            <span class="em" index="0" isinline="true">The Journey</span>
+                        </span>
+                    </div>
+                    <p>
+                        We're here to guide you every step of the way through a proven process that ensures your project is delivered on time, on budget and to the highest standards. Our approach is built on seven destinations, each providing clear, actionable dependencies that keep your project on track and your teams aligned.
+                        <br><br>
+                        We combine expertise with collaboration, making you feel confident and supported throughout the journey. With every stage, we take a proactive role, providing insights and solutions that help you stay ahead. As part of our values, we aim to enjoy the journey together, ensuring success is both rewarding and as smooth as possible.
+                    </p>
+                    </div>
+                    <div class="j-container">
+                        <img src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/Photos/ServiceShowImg/j1.png" alt="" class="j1" width="100%">
+                    </div>
+            </div>
+    </section>
+
+    <div style="margin-top: 2rem; margin-bottom: 2rem; margin-left: inherit; margin-right: inherit" class="spacer-anchor" data-astro-cid-zlyqn4em="">
+        &nbsp;
+    </div>
+    
+    <section class="journey-section">
+            <div class="journey-container">
+                <div class="journey-img">
+                    <img src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/Photos/ServiceShowImg/h1.png" alt="">
+                </div>
+                <div class="journey-text">
+                    <h3>Define</h3>
+                    <p>Our product team will work with you to conceptualise the primary user journeys using best practice techniques. Visualising the hierarchy and key user flows will make it easy to validate and test the products features. It's also very exciting to see it coming to life and we will work with you on various iterations until it feels right. Our team will produce simplified user interfaces and interactive prototypes considering responsive designs, accessibility and usability. Our highly skilled team will work with you to produce a beautiful, functional product which is centred around your branding guidelines if you have an existing brand.</p>
+                </div>
+            </div>
+            <div class="journey-container">
+                <div class="journey-text">
+                    <h3>Discover</h3>
+                    <p>With over 20 years of experience in the team, we will help evaluate and design the various aspects of the technical solution, undertaking any due diligence to reduce any risks involved in complex requirements, understanding these risks, reduces the likelihood of costly surprises later. This is a crucial phase which takes place before we write a single line of code, to ensure you are investing in a viable project from the outset. We can work with you to evaluate existing technology, and support and advise third-party suppliers to create high-level system architecture flows, and data models to set achievable milestones and enhance the overall reliability of the final future-proofed product..</p>
+                </div>
+                <div class="journey-img">
+                    <img src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/Photos/ServiceShowImg/h2.png" alt="">
+                </div>
+            </div>
+            <div class="journey-container">
+                <div class="journey-img">
+                    <img src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/Photos/ServiceShowImg/h3.png" alt="">
+                </div>
+                <div class="journey-text">
+                    <h3>Document</h3>
+                    <p>Working together, we will finalise your product documentation, capturing the details of the requirements and any other relevant materials to guide the development phase such as a detailed tech stack design and API mapping.</p>
+                </div>
+            </div>
+            <div class="journey-container">
+                <div class="journey-text">
+                    <h3>Develop</h3>
+                    <p>Our technical teams work through sprint-based cycles developing the prioritised feature sets, allowing us to collaborate with our partners early on and continuous feedback before the app is fully developed. By resolving issues as they arise, we can mitigate risks that might otherwise lead to delays or overruns if discovered later. We are on the development journey together, and you will work alongside us throughout.</p>
+                </div>
+                <div class="journey-img">
+                    <img src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/Photos/ServiceShowImg/h4.png" alt="">
+                </div>
+            </div>
+            <div class="journey-container">
+                <div class="journey-img">
+                    <img src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/Photos/ServiceShowImg/h5.png" alt="">
+                </div>
+                <div class="journey-text">
+                    <h3>Deploy</h3>
+                    <p>Iterative testing allows for continuous quality assurance from ourselves and your team. Each iteration is code-reviewed and tested for bugs, performance issues, and usability problems such as accessibility. Fixing these issues incrementally ensures that the app maintains a high standard of quality throughout the development process. This includes testing from our partners too! User Acceptance Testing by our partners allows testing of real-world scenarios that the app’s end-users will encounter.</p>
+                </div>
+            </div>
+            <div class="journey-container">
+                <div class="journey-text">
+                    <h3>Diagnose</h3>
+                    <p>Ongoing support and maintenance is essential for continuous improvement, keeping up with the ever-evolving landscape of cybersecurity threats, performance, and adaptability of an app. We will work with you to ensure your app stays relevant and competitive as user needs and market trends change.</p>
+                </div>
+                <div class="journey-img">
+                    <img src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/Photos/ServiceShowImg/h6.png" alt="">
+                </div>
+            </div>
+            <div class="journey-container">
+                <div class="journey-img">
+                    <img src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/Photos/ServiceShowImg/h7.png" alt="">
+                </div>
+                <div class="journey-text">
+                    <h3>Discuss</h3>
+                    <p>Our product teams will become an extension of your team, taking a proactive approach to scaling your solution after launch, while ensuring they work with you to maintain the quality of the app as issues arise with new operating system versions, devices, and browsers being released regularly.</p>
+                </div>
+            </div>
+    </section>
+
+
+    <div id="contact-us" style="margin-top: 2rem; margin-bottom: 2rem; margin-left: inherit; margin-right: inherit" class="spacer-anchor" data-astro-cid-zlyqn4em="">
+        &nbsp;
+    </div>
+    <div style="margin-top: 2rem; margin-bottom: 2rem; margin-left: inherit; margin-right: inherit" class="spacer-anchor" data-astro-cid-zlyqn4em="">
+        &nbsp;
+    </div>
+    <div style="margin-top: 2rem; margin-bottom: 2rem; margin-left: inherit; margin-right: inherit" class="spacer-anchor" data-astro-cid-zlyqn4em="">
+        &nbsp;
+    </div>
+
+    <section class="contact-us">
+        <div class="contact-us-container">
+            <div class="contact-us-text">
+                <em>get in touch</em>
+                <p>Start your journey here</p>
+            </div>
+            <div>
+                <form action="https://formspree.io/f/mblzdyny" method="POST">
+                    <input type="text" name="firstName" placeholder="First name*" requi#d1463f>
+                    <input type="text" name="lastName" placeholder="Last name*" requi#d1463f>
+
+                    <textarea name="problem" placeholder="What problem can we help you solve?*" requi#d1463f></textarea>
+
+                    <input type="text" name="telephone" placeholder="Telephone" requi#d1463f>
+                    <input type="email" name="email" placeholder="Email*" requi#d1463f>
+
+                    <input type="text" name="company" placeholder="Company name">
+                    <select name="findUs" requi#d1463f>
+                    <option selected disabled>How did you find us?</option>
+                    <option>Word of mouth</option>
+                    <option>Social Media</option>
+                    <option>Agency review site</option>
+                    <option>Read an article</option>
+                    <option>LinkedIn message</option>
+                    <option>Email</option>
+                    <option>I asked ChatGPT (or similar)</option>
+                    <option>Google search</option>
+                    <option>I'm not sure</option>
+                    </select>
+
+                    <button type="submit" class="submit-btn">
+                    Get in touch 
+                    <img src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/icons/icons8-arrow-32.png" alt="">
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div style="margin-top: 2rem; margin-bottom: 2rem; margin-left: inherit; margin-right: inherit" class="spacer-anchor" data-astro-cid-zlyqn4em="">
+        &nbsp;
+    </div>
+
+    <footer>
+        <div class="footer-main">
+            <div class="info-container">
+                <div class="company-branch">
+                    <div class="company-branch-heading">
+                        <img src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/logos/1.png"alt="">
+                        <div class="footer-titles"> Fifty One</div>
+                    </div>
+                    
+                    <ul>
+                        <li>
+                            <a href="">
+                                <span style="font-weight: 900;">London</span>
+                                <br>
+                                90 York Way,
+                                <br>
+                                London, N1 9AG, UK
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span style="font-weight: 900;">York</span>
+                                <br>
+                                12-18 Market Street,
+                                <br>
+                                York, YO1 8ST, UK
+                            </a>
+                        </li>
+                        <li>
+                        <a href="">+44 1904 217171</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navigation-main">
+                    <div class="footer-titles">Navigation</div>
+                    <ul>
+                        <li><a href="https://MEETRATHOD006.github.io/Fifty-One/OtherPages/journey/journey.html">The Journey</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                        <li><a href="#">The Core</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Insights</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="services-main">
+                    <div class="footer-titles">Services</div>
+                    <ul>
+                        <li><a href="https://MEETRATHOD006.github.io/Fifty-One/OtherPages/Services_page/services.html#service-1">Creative Web Design </a></li>
+                        <li><a href="https://MEETRATHOD006.github.io/Fifty-One/OtherPages/Services_page/services.html#service-2">Functional Development</a></li>
+                        <li><a href="https://MEETRATHOD006.github.io/Fifty-One/OtherPages/Services_page/services.html#service-3">Premium Advanced Solutions</a></li>
+                        <li><a href="https://MEETRATHOD006.github.io/Fifty-One/OtherPages/Services_page/services.html#service-4">SEO & Growth Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="company-info">
+                    <div class="footer-titles">Company Info</div>
+                    <ul>
+                        <li><a href="#contact-us">Contact Us</a></li>
+                        <li><a href="#">Press Releases</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="links-container">
+                <div class="iconsdiv">
+                    <a href="https://wa.me/919727769475?text=Hi%20I%20am%20interested%20in%20your%20web%20design%20services."><i class="fa-solid fa-phone"></i></a>
+                    <a href="mailto:yourname@yourdomain.com"><i class="fa-regular fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/fifty_0ne/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/fiftyone-techsolutions-a782b0386/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://x.com/FiftyOne_TECH"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <div
+                    class="copyright"
+                >The Fifty One Ltd © 2025</div>
+            </div>
+        </div>
+    </footer>
+    <div class="fixer"></div>
+</body>
+
+<script src="journey.js"></script>
+<script src="Animation_Scripts/BrandsLogo.js"></script>
+
+</html>
+
+
+
+

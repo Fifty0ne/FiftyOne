@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>51</title>
+</head>
+<body>
+    <svg width="0" height="0"></svg>
+    <!-- Smooth wave filter -->
+    <filter id="wavy">
+        <feTurbulence id="turbulence" baseFrequency="0.0001" numOctaves="3" seed="50">
+        <animate attributeName="baseFrequency"
+                dur="6s"
+                values="0.01;0.015;0.01"
+                repeatCount="indefinite"/>
+        </feTurbulence>
+        <feDisplacementMap in="SourceGraphic" scale="3" />
+    </filter>
+    </svg>
+    
+    <div class="triangle-container">
+    <svg class="triangle triangle1" viewBox="0 0 200 200">
+        <polygon points="100,10 190,190 10,190" filter="url(#wavy)" />
+    </svg>
+    <svg class="triangle triangle2" viewBox="0 0 200 200">
+        <polygon points="100,10 190,190 10,190" filter="url(#wavy)" />
+    </svg>
+    <svg class="triangle triangle3" viewBox="0 0 200 200">
+        <polygon points="100,10 190,190 10,190" filter="url(#wavy)" />
+    </svg>
+    </div>
+
+    <header>
+        <div id="main-nav">
+            <div class="container">
+            <!-- HAMBURGER ICON -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- LOGO -->
+            <a href="https://MEETRATHOD006.github.io/Fifty-One/index.html" class="logo flex items-center gap-2" title="Home" aria-label="Home">
+                <div class="desktop-logo hidden">
+                <img src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/logos/1.png" alt="Logo" width="120px" height="120px">
+                <p>FIFTY ONE</p>
+                </div>
+                <div class="mobile-logo"></div>
+            </a>
+
+            <div class="wrapper">
+                <!-- Desktop Nav -->
+                <nav class="desktop-menu lg:static" aria-label="Main navigation desktop">
+                <!-- Keep this empty or keep desktop-only nav here -->
+                </nav>
+
+                <!-- Fullscreen Menu (moved OUTSIDE .desktop-menu) -->
+                <div class="listcontainer">
+                <li><a href="https://MEETRATHOD006.github.io/Fifty-One/index.html" class="menu-item">Home</a></li>
+                <li><a href="https://MEETRATHOD006.github.io/Fifty-One/OtherPages/Services_page/services.html" class="menu-item">Services</a></li>
+                <li><a href="https://MEETRATHOD006.github.io/Fifty-One/OtherPages/About_page/about.html" class="menu-item">About</a></li>
+                <li><a href="https://MEETRATHOD006.github.io/Fifty-One/OtherPages/journey/journey.html" class="menu-item">Journey</a></li>
+                <li class="last"><a href="#contact-us" class="menu-item">Contact Us</a></li>
+                <span class="nav-overlay"></span>
+                </div>
+            </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="hero-section">
+        <h1 class="hero-text">
+            <p>Do you want</p>
+            <p>a 
+                <del class="strike-through animate" index="1" isinline="true">Web</del>
+                or an</p>
+                <p>
+                    <span class="mark text-nowrap" index="0" isinline="true">
+                        <span class="em" index="0" isinline="true">experience?</span>
+                    </span>
+                </p>
+        </h1>
+    </section>
+
+    <div class="logo-carousel">
+        <div class="logo-track">
+            <div class="logo-item"><img class="logo-img" src="https://cdn.sanity.io/images/lpisok58/production/42b51ac3e32718ecb966010892ac2873134b6de5-556x140.svg" alt="Logo 1"></div>
+            <div class="logo-item"><img class="logo-img" src="https://cdn.sanity.io/images/lpisok58/production/99f4964630a7d538697777e2e3dfaaa36f8a4081-255x62.svg" alt="Logo 2"></div>
+            <div class="logo-item"><img class="logo-img" src="https://cdn.sanity.io/images/lpisok58/production/33e04d881cdaaa0de578beec751a5a20c8f7eff3-442x130.svg" alt="Logo 3"></div>
+            <div class="logo-item"><img class="logo-img" src="https://cdn.sanity.io/images/lpisok58/production/227c47624b77dd84c4f849a5fc0e42e4a05db57c-325x163.svg" alt="Logo 4"></div>
+            <div class="logo-item"><img class="logo-img" src="https://cdn.sanity.io/images/lpisok58/production/4922a2eb263b5ba0aefd8955c84302b4813ddb5d-142x61.svg" alt="Logo 5"></div>
+            <div class="logo-item"><img class="logo-img" src="https://cdn.sanity.io/images/lpisok58/production/70eb1a535109a235d5564c39f7a9b5cb57a2334a-623x235.svg" alt="Logo 6"></div>
+            <div class="logo-item"><img class="logo-img" src="https://cdn.sanity.io/images/lpisok58/production/0735e1f32b54bfbe433979de05f3a1d82d720c39-220x31.svg" alt="Logo 7"></div>
+            <div class="logo-item"><img class="logo-img" src="https://cdn.sanity.io/images/lpisok58/production/614afaecdb54a22456a44df71f12b923b77eaf99-570x231.svg" alt="Logo 8"></div>
+        </div>
+    </div>
+
+    <div style="margin-top: 2rem; margin-bottom: 2rem; margin-left: inherit; margin-right: inherit" class="spacer-anchor" data-astro-cid-zlyqn4em="">
+        &nbsp;
+    </div>
+
+    <section class="callout">
+        <div class="subcallout">
+            <em class="calloutem">Partnership is key to success</em>
+            <div>
+                <h2 class="callouth2">Lets go on an adventure together
+                    <br>
+                    we will lead the way
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    
+    <div style="margin-top: 2rem; margin-bottom: 2rem; margin-left: inherit; margin-right: inherit" class="spacer-anchor" data-astro-cid-zlyqn4em="">
+        &nbsp;
+    </div>
+    
+    <section class="journey">
+        <div class="journeycontainer">
+            <div class="journey-text">
+                Here at The Fifty One, we're dedicated to turning your vision into reality through collaborative partnerships. Our experienced team works hand-in-hand with you to create exceptional products that not only meet your needs but deliver an engaging experience.
+                <br>
+                <br>
+                Join us on The Journey where we will guide you through the ever-evolving digital landscape.
+            </div>
+            <div class="journey-btn">
+                <li class="journeybtn">
+                    <a href="https://MEETRATHOD006.github.io/Fifty-One/OtherPages/journey/journey.html" class="menu-item">The Journey</a>
+                    <img src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/icons/icons8-arrow-32.png" alt="">
+                </li>
+                
+            </div>
+        </div>
+    </section>
+    
+    <div style="margin-top: 2rem; margin-bottom: 2rem; margin-left: inherit; margin-right: inherit" class="spacer-anchor" data-astro-cid-zlyqn4em="">
+        &nbsp;
+    </div>
+
+    <section class="tilted">
+            <div class="helpers-section">
+                <div class="helper-text">
+                    <em>how we can help</em>
+                    <h2>We are the experts</h2>
+                    <div style="font-family: 'Poppins'; margin-top: 1rem;">We're not just coders. We're a full-service app agency that offers a comprehensive range of services that include strategy, design, development, quality assurance, and ongoing maintenance. Ensuring your app not only functions flawlessly but also delivers an exceptional user experience, aligns with your business goals, and stays updated with the latest technological advancements.</div>
+                </div>
+            </div>
+
+            <section id="about-service">
+                <div class="about-service-container">
+                    
+                    <div class="about-service-main">
+                        <div class="services-btns-container">
+                            <div class="services-btns">
+                                <button class="mark2 services-btn services-btn-1">Creative Web Design</button>
+                                <button class="services-btn services-btn-2">Functional Development</button>
+                                <button class="services-btn services-btn-3">Premium Advanced Solutions</button>
+                                <button class="services-btn services-btn-4">SEO & Growth Marketing</button>
+                            </div>
+                            <div>
+                                <img src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/icons/icons8-arrow-32.png" alt="" class="arrowimg-1">
+                                <img src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/icons/icons8-arrow-32.png" alt="" class="arrowimg-2">
+                                <img src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/icons/icons8-arrow-32.png" alt="" class="arrowimg-3">
+                                <img src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/icons/icons8-arrow-32.png" alt="" class="arrowimg-4">
+                            </div>
+                        </div>
+                        <div class="mobile-services">
+                            <div class="mobile-service-item">
+                                <div class="mobile-service-header">Creative Web Design <span>+</span></div>
+                                <div class="mobile-service-content">
+                                <p>We craft visually stunning, user-friendly websites that represent your brand and attract your customers. Every design is unique, modern, and tailored to your business goals.</p>
+                                <a href="https://MEETRATHOD006.github.io/Fifty-One/OtherPages/Services_page/services.html#service-1">Creative Web Design <img src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/icons/icons8-arrow-32.png" alt=""></a>
+                                </div>
+                            </div>
+
+                            <div class="mobile-service-item">
+                                <div class="mobile-service-header">Functional Development<span>+</span></div>
+                                <div class="mobile-service-content">
+                                <p>Beyond looks, we build websites that work. From online ordering to table reservations, our solutions are fast, secure, and tailored to your needs.</p>
+                                <a href="https://MEETRATHOD006.github.io/Fifty-One/OtherPages/Services_page/services.html#service-2">Functional Development<img src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/icons/icons8-arrow-32.png" alt=""></a>
+                                </div>
+                            </div>
+
+                            <div class="mobile-service-item">
+                                <div class="mobile-service-header">Premium Advanced Solutions<span>+</span></div>
+                                <div class="mobile-service-content">
+                                <p>For businesses that want to stand out, we create high-end websites with interactive animations, seamless e-commerce, and advanced features that deliver a premium user experience.</p>
+                                <a href="https://MEETRATHOD006.github.io/Fifty-One/OtherPages/Services_page/services.html#service-3">Premium Advanced Solutions<img src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/icons/icons8-arrow-32.png" alt=""></a>
+                            </div>
+                        </div>
+
+                        <div class="mobile-service-item">
+                            <div class="mobile-service-header">SEO & Growth Marketing<span>+</span></div>
+                            <div class="mobile-service-content">
+                            <p>A great website needs visibility. Our SEO and digital marketing strategies help you rank higher, attract more visitors, and turn them into loyal customers.</p>
+                            <a href="https://MEETRATHOD006.github.io/Fifty-One/OtherPages/Services_page/services.html#service-4">SEO & Growth Marketing<img src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/icons/icons8-arrow-32.png" alt=""></a>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="service-content">
+                            <div>
+                                <h3 class="mark2" id="about-service-title">Creative web design</h3>
+                            </div>
+                            <div class="service-content-main">
+                                <div class="service-content-text">
+                                    <p>We craft visually stunning, user-friendly websites that represent your brand and attract your customers. Every design is unique, modern, and tailored to your business goals.</p>
+                                    <a href="https://MEETRATHOD006.github.io/Fifty-One/OtherPages/Services_page/services.html#creative-web-design" id="service-explore-btn">
+                                        Explore Creative web design
+                                        <img src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/icons/icons8-arrow-32.png" alt="">
+                                    </a>
+                                </div>
+                                <div>
+                                    <img id="service-show-img" src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/Photos/ServiceShowImg/ServiceshowImg1.avif" style="" loading="lazy" alt="Image" data-astro-cid-r4gngaxd="" width="275" height="100%" decoding="async">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </section>
+
+    <div style="margin-top: 2rem; margin-bottom: 2rem; margin-left: inherit; margin-right: inherit" class="spacer-anchor" data-astro-cid-zlyqn4em="">
+        &nbsp;
+    </div>
+
+    <section class="success">
+            <div class="success-section">
+                <div class="success-text">
+                    <em>Celebrating successful partnerships</em>
+                    <h2>Over 150 apps and counting...</h2>
+                    <div style="font-family: 'Poppins'; margin-top: 1rem;">Our success stories represent not just lines of codes, but the exciting impact the collaboration with our partners has across a wide range of industries and verticals.</div>
+                </div>
+            </div>
+    </section>
+
+    <div style="margin-top: 2rem; margin-bottom: 2rem; margin-left: inherit; margin-right: inherit" class="spacer-anchor" data-astro-cid-zlyqn4em="">
+        &nbsp;
+    </div>
+
+    <section class="work">
+        <div class="work-container">
+            <div class="work-boxs" style="background-color: rgba(134, 249, 246, 1.00);">
+                <div class="left-container">
+                    <div class="logo-text">
+                        <img src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/Photos/OurWork/logo_1.png" alt="" style="width: 100%;">
+                        <p>Driving digital growth with smart SEO and marketing solutions</p>
+                    </div>
+                    <div class="see-btn">
+                    </div>
+                </div>
+                <div class="right-container">
+                    <div class="work-img">
+                        <img src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/Photos/OurWork/1.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-boxs" style="background-color: rgba(246, 129, 198, 1.00);">
+                <div class="left-container">
+                    <div class="logo-text">
+                        <img src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/Photos/OurWork/logo_2.png" alt="">
+                        <p>Simple, elegant, and powerful online shopping made easy.</p>
+                    </div>
+                    <div class="see-btn">
+                    </div>
+                </div>
+                <div class="right-container">
+                    <div class="work-img">
+                        <img src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/Photos/OurWork/2.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-boxs" style="background-color: rgba(194, 152, 254, 1.00);">
+                <div class="left-container">
+                    <div class="logo-text">
+                        <img src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/Photos/OurWork/logo_3.png" alt="">
+                        <p>Showcasing modern app features and services with a dynamic, responsive design.</p>
+                    </div>
+                    <div class="see-btn">
+                    </div>
+                </div>
+                <div class="right-container">
+                    <div class="work-img">
+                        <img src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/Photos/OurWork/3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="work-boxs" style="background-color: rgba(64, 198, 172, 1.00);">
+                <div class="left-container">
+                    <div class="logo-text">
+                        <img src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/Photos/OurWork/logo_4.png" alt="">
+                        <p>Elevating fashion with a sleek, modern shopping experience.</p>
+                    </div>
+                    <div class="see-btn">
+                    </div>
+                </div>
+                <div class="right-container">
+                    <div class="work-img">
+                        <img src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/Photos/OurWork/4.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div style="margin-top: 2rem; margin-bottom: 2rem; margin-left: inherit; margin-right: inherit" class="spacer-anchor" data-astro-cid-zlyqn4em="">
+        &nbsp;
+    </div>
+
+    <section class="who-we-are" id="about">
+        <div class="aboutus-container">
+                <div>
+                    <em>Who we are</em>
+                    <h2>
+                        <p class="we-enjoy">We enjoy</p>
+                        <p class="the-journey">the journey</p>
+                    </h2>
+                    <div class="about-us-detail">
+                        <p>At the heart of our organisation is our incredible team, We are not just about code – we are about building strong partnerships.</p>
+                    </div>
+                    <div>
+                        <a href="https://MEETRATHOD006.github.io/Fifty-One/OtherPages/About_page/about.html">
+                            More about us
+                            <img src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/icons/icons8-arrow-32.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="mask-img-container">
+                    <div class="mask-img">
+                        <img src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/Photos/team.webp" alt="">
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <div id="contact-us" style="margin-top: 2rem; margin-bottom: 2rem; margin-left: inherit; margin-right: inherit" class="spacer-anchor" data-astro-cid-zlyqn4em="">
+        &nbsp;
+    </div>
+    <div style="margin-top: 2rem; margin-bottom: 2rem; margin-left: inherit; margin-right: inherit" class="spacer-anchor" data-astro-cid-zlyqn4em="">
+        &nbsp;
+    </div>
+    <div style="margin-top: 2rem; margin-bottom: 2rem; margin-left: inherit; margin-right: inherit" class="spacer-anchor" data-astro-cid-zlyqn4em="">
+        &nbsp;
+    </div>
+
+    <section class="contact-us">
+        <div class="contact-us-container">
+            <div class="contact-us-text">
+                <em>get in touch</em>
+                <p>Start your journey here</p>
+            </div>
+            <div>
+                <form action="https://formspree.io/f/mblzdyny" method="POST">
+                    <input type="text" name="firstName" placeholder="First name*" required>
+                    <input type="text" name="lastName" placeholder="Last name*" required>
+
+                    <textarea name="problem" placeholder="What problem can we help you solve?*" required></textarea>
+
+                    <input type="text" name="telephone" placeholder="Telephone" required>
+                    <input type="email" name="email" placeholder="Email*" required>
+
+                    <input type="text" name="company" placeholder="Company name">
+                    <select name="findUs" required>
+                    <option selected disabled>How did you find us?</option>
+                    <option>Word of mouth</option>
+                    <option>Social Media</option>
+                    <option>Agency review site</option>
+                    <option>Read an article</option>
+                    <option>LinkedIn message</option>
+                    <option>Email</option>
+                    <option>I asked ChatGPT (or similar)</option>
+                    <option>Google search</option>
+                    <option>I'm not sure</option>
+                    </select>
+
+                    <button type="submit" class="submit-btn">
+                    Get in touch 
+                    <img src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/icons/icons8-arrow-32.png" alt="">
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div style="margin-top: 2rem; margin-bottom: 2rem; margin-left: inherit; margin-right: inherit" class="spacer-anchor" data-astro-cid-zlyqn4em="">
+        &nbsp;
+    </div>
+
+    <footer>
+        <div class="footer-main">
+            <div class="info-container">
+                <div class="company-branch">
+                    <div class="company-branch-heading">
+                        <img src="https://MEETRATHOD006.github.io/Fifty-One/Imgs/logos/1.png"alt="">
+                        <div class="footer-titles"> Fifty One</div>
+                    </div>
+                    
+                    <ul>
+                        <li>
+                            <a href="">
+                                <span style="font-weight: 900;">London</span>
+                                <br>
+                                90 York Way,
+                                <br>
+                                London, N1 9AG, UK
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span style="font-weight: 900;">York</span>
+                                <br>
+                                12-18 Market Street,
+                                <br>
+                                York, YO1 8ST, UK
+                            </a>
+                        </li>
+                        <li>
+                        <a href="">+44 1904 217171</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navigation-main">
+                    <div class="footer-titles">Navigation</div>
+                    <ul>
+                        <li><a href="https://MEETRATHOD006.github.io/Fifty-One/OtherPages/journey/journey.html">The Journey</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                        <li><a href="#">The Core</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Insights</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="services-main">
+                    <div class="footer-titles">Services</div>
+                    <ul>
+                        <li><a href="https://MEETRATHOD006.github.io/Fifty-One/OtherPages/Services_page/services.html#service-1">Creative Web Design </a></li>
+                        <li><a href="https://MEETRATHOD006.github.io/Fifty-One/OtherPages/Services_page/services.html#service-2">Functional Development</a></li>
+                        <li><a href="https://MEETRATHOD006.github.io/Fifty-One/OtherPages/Services_page/services.html#service-3">Premium Advanced Solutions</a></li>
+                        <li><a href="https://MEETRATHOD006.github.io/Fifty-One/OtherPages/Services_page/services.html#service-4">SEO & Growth Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="company-info">
+                    <div class="footer-titles">Company Info</div>
+                    <ul>
+                        <li><a href="#contact-us">Contact Us</a></li>
+                        <li><a href="#">Press Releases</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="links-container">
+                <div class="iconsdiv">
+                    <a href="https://wa.me/919727769475?text=Hi%20I%20am%20interested%20in%20your%20web%20design%20services."><i class="fa-solid fa-phone"></i></a>
+                    <a href="mailto:yourname@yourdomain.com"><i class="fa-regular fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/fifty_0ne/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/fiftyone-techsolutions-a782b0386/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://x.com/FiftyOne_TECH"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <div
+                    class="copyright"
+                >The Fifty One Ltd © 2025</div>
+            </div>
+        </div>
+    </footer>
+    <div class="fixer"></div>
+</body>
+<script src="script.js"></script>
+<script src="Animation_Scripts/BrandsLogo.js"></script>
+
+
+</html>
+
+
+
+
