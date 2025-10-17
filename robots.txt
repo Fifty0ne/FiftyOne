@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://MEETRATHOD006.github.io/Fifty-One/sitemap.xml
